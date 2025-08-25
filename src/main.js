@@ -5,13 +5,11 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import JaneUI from 'jane-ui'
-
-
+import Atopos from 'wanling'
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.use(JaneUI)
+app.use(Atopos)
 app.mount('#app')
