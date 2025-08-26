@@ -1,21 +1,13 @@
 <script setup>
 let cityName = ref("");
-
-const handleCliack = () => {
-  console.log(cityName);
-};
 </script>
 
 <template>
-  <!-- <wl-input v-model="cityName" placeholder="请输入城市名称"></wl-input> -->
-  <wl-button>创建旅行 </wl-button>
-
-  <input
-    type="text"
-    v-model="cityName"
-    placeholder="请输入城市名称"
-    @change="handleCliack()"
-  />
+    <wl-input
+        v-model="cityName"
+        placeholder="请输入市名称"
+        @input="handleCliack()"
+    ></wl-input>
 </template>
 
 <style scoped></style>
