@@ -18,10 +18,14 @@ onMounted(async () => {
         })
         .then((response) => {
             const access_token = response.data.access;
+            const refresh_token = response.data.refresh;
             axios.defaults.headers.common[
                 "Authorization"
             ] = `Bearer ${access_token}`;
-            const res3 = axios.get("protected/");
+
+            const res4 = axios.post("token/refresh/", {
+                refresh: refresh_token,
+            });
         });
 });
 </script>
