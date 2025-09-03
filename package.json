@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "axios": "^1.11.0",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.12",
     "unplugin-auto-import": "^20.0.0",
