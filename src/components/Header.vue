@@ -31,7 +31,9 @@
 </script>
 
 <template>
-    <div class="w-full h-[10vh] flex bg-amber-300">
+    <div
+        class="px-[14%] sticky w-full h-[16vh] flex justify-between items-center bg-[linear-gradient(180deg,#ffffff_39.9%,#f8f8f8_100%)]"
+    >
         <span>Airbnb</span>
         <wl-button>房源</wl-button>
         <wl-button>体验</wl-button>
@@ -39,5 +41,3 @@
         <wl-button>成为房东</wl-button>
     </div>
 </template>
-
-<style scoped></style>
