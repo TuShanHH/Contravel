@@ -39,7 +39,7 @@ onUnmounted(() => {
             <Header />
         </header>
 
-        <main class="mt-[16vh] w-full overflow-visible">
+        <main class="mt-[16vh] w-full min-h-screen overflow-visible">
             <Main />
         </main>
     </div>
