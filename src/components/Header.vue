@@ -32,7 +32,7 @@
 
 <template>
     <div
-        class="px-[14%] sticky w-full h-[16vh] flex justify-between items-center bg-[linear-gradient(180deg,#ffffff_39.9%,#f8f8f8_100%)]"
+        class="px-[14%] w-full h-full flex justify-between items-center bg-[linear-gradient(180deg,#ffffff_39.9%,#f8f8f8_100%)]"
     >
         <span>Airbnb</span>
         <wl-button>房源</wl-button>
