@@ -1,6 +1,7 @@
 <script setup>
 import Header from "../components/Header.vue";
 import Main from "../components/Main.vue";
+import Footer from "@/components/Footer.vue";
 
 const headerHeight = ref("16vh");
 
@@ -42,5 +43,9 @@ onUnmounted(() => {
         <main class="mt-[16vh] w-full min-h-screen overflow-visible">
             <Main />
         </main>
+
+        <footer class="w-full h-auto">
+            <Footer />
+        </footer>
     </div>
 </template>

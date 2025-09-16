@@ -1,6 +1,6 @@
 <script setup>
 // import axios from "../axios/axiosInstance.js";
-
+let open = ref(false);
 // onMounted(async () => {
 //     const res = await axios.get("hello/");
 //     console.log(res.data.message);
@@ -28,16 +28,28 @@
 //             });
 //         });
 // });
+const toBeLandlord = () => {
+    open.value = true;
+};
+
+function handleConfirm() {
+    alert("用户点击了确定");
+}
 </script>
 
 <template>
     <div
-        class="px-[14%] w-full h-full flex justify-between items-center bg-[linear-gradient(180deg,#ffffff_39.9%,#f8f8f8_100%)]"
+        class="border-b-1 border-b-gray-200 px-[14%] w-full h-full flex justify-between items-center bg-[linear-gradient(180deg,#ffffff_39.9%,#f8f8f8_100%)]"
     >
-        <span>Airbnb</span>
+        <span class="text-[#5850ec]">Airbnb</span>
         <wl-button>房源</wl-button>
         <wl-button>体验</wl-button>
         <wl-button>服务</wl-button>
-        <wl-button>成为房东</wl-button>
+        <wl-button @click="toBeLandlord">成为房东</wl-button>
     </div>
+
+    <wl-dailog v-model="open" @confirm="handleConfirm">
+        <template #header>提示</template>
+        你确定要执行此操作吗？
+    </wl-dailog>
 </template>
