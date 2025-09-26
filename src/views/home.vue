@@ -37,7 +37,7 @@ onUnmounted(() => {
             class="w-full fixed top-0 left-0 transition-all duration-300 ease-in-out"
             :style="{ height: headerHeight }"
         >
-            <Header />
+            <Header :headerHeight="headerHeight"  />
         </header>
 
         <main class="mt-[16vh] w-full min-h-screen overflow-visible">
