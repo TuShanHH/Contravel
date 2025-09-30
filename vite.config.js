@@ -7,6 +7,7 @@ import autpImport from "unplugin-auto-import/vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+    base: "./",
     plugins: [
         vue(),
         vueDevTools(),
