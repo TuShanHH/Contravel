@@ -46,6 +46,7 @@ onUnmounted(() => {
 
         <footer class="w-full h-auto">
             <Footer />
+            测试合并
         </footer>
     </div>
 </template>
