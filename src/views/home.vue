@@ -46,7 +46,6 @@ onUnmounted(() => {
 
         <footer class="w-full h-auto">
             <Footer />
-            真的是最后再次测试一键部署
         </footer>
     </div>
 </template>
