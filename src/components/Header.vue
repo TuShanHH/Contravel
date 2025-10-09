@@ -3,7 +3,7 @@ const props = defineProps({
     headerHeight: String,
 });
 let open = ref(false);
-
+const openInput = ref(false);
 const toBeLandlord = () => {
     open.value = true;
 };
@@ -37,7 +37,13 @@ const toBeLandlord = () => {
                 <wl-button>服务</wl-button>
             </div>
             <div class="h-full flex flex-row items-center justify-between">
-                <wl-button>地点</wl-button>
+                <wl-button @click="openInput = true"
+                    >地点
+                    <wl-input
+                        v-show="openInput"
+                        placeholder="搜索目的地"
+                    ></wl-input>
+                </wl-button>
                 <wl-button>入住</wl-button>
 
                 <wl-button>退房</wl-button>
@@ -46,7 +52,7 @@ const toBeLandlord = () => {
             </div>
         </div>
 
-        <div class="h-full">
+        <div class="h-full ">
             <div
                 class="flex flex-row items-center justify-between"
                 :style="{
@@ -54,6 +60,19 @@ const toBeLandlord = () => {
                 }"
             >
                 <wl-button @click="toBeLandlord">成为房东</wl-button>
+                <div class="w-6 h-6">
+                    <wl-button
+                        ><img class="w-6 h-6" src="../assets/globe.svg" alt=""
+                    /></wl-button>
+                </div>
+                <div class="w-6 h-6">
+                    <wl-button
+                        ><img
+                            class="w-6 h-6"
+                            src="../assets/menu-burger.svg"
+                            alt=""
+                    /></wl-button>
+                </div>
             </div>
         </div>
     </div>
