@@ -3,6 +3,7 @@ const props = defineProps({
     headerHeight: String,
 });
 let open = ref(false);
+
 const toBeLandlord = () => {
     open.value = true;
 };
